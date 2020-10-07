@@ -13,10 +13,13 @@ const codes = [
 
 function init() {
   document.body.addEventListener("keydown", (event) => {
-    
-    return e.preventDefault()
-  } else {
-    console.log(e.key)
-  } 
+    if (e.key === codes[i]) {
+      i++;
+      
+      if(i === codes.length) {
+      return e.preventDefault()
+    } else {
+      console.log(e.key)
+    } 
   })
 }
