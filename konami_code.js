@@ -17,9 +17,12 @@ function init() {
       i++;
       
       if(i === codes.length) {
-      return e.preventDefault()
+      alert("Hurray!");
+      
+      i = 0;
+      }
     } else {
-      console.log(e.key)
+      i = 0;
     } 
   })
 }
